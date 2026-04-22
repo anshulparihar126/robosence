@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Technoai - IT Solutions & Business Services Multipurpose Responsive Website Template</title>
+    <meta content="" name="Technoai - IT Solutions & Business Services Multipurpose Responsive Website Template">
+    <meta name="description" content="Technoai - IT Solutions & Business Services Multipurpose Responsive Website Template">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="" name="ZRTHEMES">
+
+    <!-- Favicons -->
+    <link href="assets/images/favicon.png" rel="icon">
+    <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&amp;display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <!-- <link href="assets/stylesheets/styles.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/stylesheets/gallery.css">
+    <!-- <link rel="stylesheet" href="assets/stylesheets/services.css"> -->
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            /*place-items: center;*/
+        }
+        
+        #galler {
+            text-align: center;
+        }
+        
+        .gallery {
+            place-items: center;
+            background-color: #029b9b;
+            --size: 100px;
+            display: grid;
+            grid-template-columns: repeat(6, var(--size));
+            grid-auto-rows: var(--size);
+            margin-bottom: var(--size);
+            place-items: start center;
+            gap: 5px;
+            &:has(:hover) img:not(:hover),
+            &:has(:focus) img:not(:focus) {
+                filter: brightness(0.5) contrast(0.5);
+            }
+            & img {
+                object-fit: cover;
+                width: calc(var(--size) * 2);
+                height: calc(var(--size) * 2);
+                clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z");
+                transition: clip-path 0.25s, filter 0.75s;
+                grid-column: auto / span 2;
+                border-radius: 5px;
+                &:nth-child(5n - 1) {
+                    grid-column: 2 / span 2
+                }
+                &:hover,
+                &:focus {
+                    clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
+                    z-index: 1;
+                    transition: clip-path 0.25s, filter 0.25s;
+                }
+                &:focus {
+                    outline: 1px dashed black;
+                    outline-offset: -5px;
+                }
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header id="header" class="page header d-flex align-items-center sticked stikcy-menu">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/images/robo-logo.png" alt="logo">
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html" class="">Home</a></li>
+                    <li><a href="services.html" class="">Services</a></li>
+                    <li><a href="gallery" class="">Gallery</a></li>
+                    <li><a href="about.html" class="">About</a></li>
+                    <li><a href="team.html" class="">Team</a></li>
+                    <!-- <li class="dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="packages.html">Pricing</a></li>
+                            <li><a href="faqs.html">FAQs</a></li>
+                            <li><a href="privacy-policy.html">Terms &amp; Conditions</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                            <li><a href="blog-details.html">Blog Detail Page</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blogs.html">News</a></li>
+                </ul> -->
+            </nav>
+            <!-- .navbar -->
+            <a href="contact.html" class="btn-get-started hide-on-mobile">Get Quotes</a>
+            <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!--  Breadcrumbs  -->
+    <div class="breadcrumbs">
+        <nav>
+            <div class="container">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Our Gallery</li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <div>
+        <h1 style="text-align: center;">Gallery</h1>
+    </div>
+
+
+
+    <section id="gallery">
+
+        <article class="gallery">
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 11.31.00 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 11.46.39 PM (1).jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 11.46.39 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 11.57.41 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 2.17.03 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 4.38.42 PM (1).jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 4.38.55 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.08.08 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 4.38.55 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.09.18 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.15.27 PM (1).jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.15.27 PM (2).jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.15.27 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.15.30 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.15.31 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.18.46 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.18.49 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.19.01 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.20.49 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.21.36 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.21.36 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 5.47.53 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-24 at 9.01.43 PM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-25 at 10.01.15 AM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-25 at 10.01.15 AM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-25 at 10.01.16 AM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-25 at 11.00.18 AM.jpeg" />
+            <img src="assets/images/gallery/WhatsApp Image 2026-03-25 at 11.01.03 AM.jpeg" />
+
+        </article>
+
+
+    </section>
+
+    <!--  Footer  -->
+    <footer id="footer" class="footer-section">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <!-- Footer Logo and Social Icons -->
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html" class="logo d-flex align-items-center">
+                                    <img src="assets/images/robo-logo2.png" alt="logo">
+                                </a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Robosence is not just a technology company — it is a vision to transform education into creation.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow Us</span>
+                                <a href="#" class="social-icon twitter"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="social-icon facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-icon instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-icon linkedin"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Services List -->
+                    <div class="col-lg-2 col-md-6 footer-column">
+                        <div class="service-widget footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Our Services</h3>
+                            </div>
+                            <ul class="list">
+                                <li><a href="services.html">STem Lab</a></li>
+                                <li><a href="services.html">AI & Robotics Lab</a></li>
+                                <li><a href="services.html">Drone Lab</a></li>
+                                <li><a href="services.html">AR & VR Lab</a></li>
+                                <li><a href="services.html">UAV Lab</a></li>
+                                <li><a href="services.html">IT Lab</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Information Links -->
+                    <div class="col-lg-2 col-md-6 footer-column">
+                        <div class="service-widget footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Information</h3>
+                            </div>
+                            <ul class="list">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Service</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info and Newsletter -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="contact-widget footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Get In Touch</h3>
+                            </div>
+                            <div class="footer-text">
+                                <p><i class="bi bi-geo-alt-fill mr-15"></i> Tanki Nagar, Fatehabad road, Agra, Uttar Pradesh</p>
+                                <p><i class="bi bi-telephone-inbound-fill mr-15"></i> +91 9992468509, +91 8126617080</p>
+                                <p><i class="bi bi-envelope-fill mr-15"></i> robosenceai@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Newsletter</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Subscribe to our newsletter for the latest updates!</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address" required>
+                                    <button><i class="bi bi-send"></i></button>
+                                </form>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Footer Copyright -->
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-left" style="width: 100%;">
+                        <div class="copyright-text">
+                            <p style="text-align: center;">&copy; Copyright 2026 – Robosence pvt .ltd . All Rights Reserved – Terms & Conditions | Privacy & Policy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center active">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/javascripts/jquery.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/javascripts/plugins.js"></script>
+    <script src="assets/javascripts/purecounter_vanilla.js"></script>
+    <script src="assets/javascripts/validator.min.js"></script>
+    <script src="assets/javascripts/contactform.js"></script>
+    <script src="assets/javascripts/particles.min.js"></script>
+    <script src="assets/javascripts/script.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/javascripts/main.js"></script>
+
+
+
+</body>
+
+</html>
