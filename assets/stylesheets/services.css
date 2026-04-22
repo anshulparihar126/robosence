@@ -492,7 +492,8 @@ img:hover {
 }
 
 .header .logo img {
-    max-height: 40px;
+    margin-left: -70px;
+    max-height: 70px;
     margin-right: 6px;
 }
 

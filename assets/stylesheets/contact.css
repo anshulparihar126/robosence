@@ -184,13 +184,12 @@ h6 {
 section {
     padding: 100px 0;
     overflow: hidden;
-    background-color: #029b9b;
 }
 
 .section {
     padding: 60px 0;
     overflow: hidden;
-    background: #029b9b;
+    background: var(--light-color);
 }
 
 .section-grey {
@@ -205,11 +204,10 @@ section {
 
 .section-header {
     text-align: center;
-    padding-bottom: 0px;
+    padding-bottom: 60px;
 }
 
 .section-header h2 {
-    margin-top: -60px;
     font-size: 2.5rem;
     position: relative;
     color: var(--theme-color);
@@ -473,7 +471,7 @@ img:hover {
 }
 
 .page.header {
-    background: white;
+    background: #ffffff;
 }
 
 .header {
@@ -535,8 +533,7 @@ img:hover {
 }
 
 section {
-    background: background-color #029b9b;
-    place-items: center;
+    background: var(--light-color);
 }
 
 
@@ -1303,8 +1300,8 @@ section {
 
 .testimonials .testimonial-item {
     box-sizing: content-box;
-    padding: 8px;
-    margin: 30px -2px;
+    padding: 30px;
+    margin: 30px 10px;
     position: relative;
     border-radius: 10px;
     display: flex;
@@ -1317,8 +1314,8 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-    width: 100%;
-    border-radius: 5%;
+    width: 90px;
+    border-radius: 50%;
 }
 
 .testimonials .testimonial-item h3 {
