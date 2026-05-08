@@ -4,13 +4,13 @@
     color: #fff;
 }
 
-.ai-hero p {
-    text-align: justify;
-}
-
 .ai-hero h1 {
     font-size: 45px;
     font-weight: 700;
+}
+
+.ai-hero p {
+    text-align: justify;
 }
 
 .ai-about {
