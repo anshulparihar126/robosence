@@ -479,7 +479,7 @@ img:hover {
 }
 
 .header .logo img {
-    /* margin-left: -70px; */
+    margin-left: -60px;
     max-height: 70px;
     margin-right: 6px;
 }
