@@ -525,6 +525,36 @@ section {
 }
 
 
+/* ================= SERVICES DROPDOWN ================= */
+
+.navbar .dropdown ul {
+    border-radius: 15px;
+    padding: 12px 0;
+    min-width: 220px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.navbar .dropdown ul li {
+    width: 100%;
+}
+
+.navbar .dropdown ul a {
+    color: white !important;
+    padding: 12px 25px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.navbar .dropdown ul a:hover {
+    background: rgba(0, 255, 255, 0.15);
+    color: cyan !important;
+    padding-left: 32px;
+}
+
+
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
@@ -593,7 +623,7 @@ section {
         z-index: 99;
         opacity: 0;
         visibility: hidden;
-        background: var(--light-color);
+        background: black;
         box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
         transition: 0.3s;
         border-radius: 12px;
