@@ -193,6 +193,21 @@ h6 {
     display: block;
 }
 
+.top-marquee {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 0px 0;
+    font-size: 10px;
+    font-weight: 500;
+    position: relative;
+    z-index: 9999;
+}
+
+.top-marquee marquee {
+    color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -222,7 +237,7 @@ h6 {
 
 .breadcrumbs nav {
     background-color: var(--theme-color);
-    padding: 20px 0;
+    padding: 10px 0;
     margin-top: 90px;
 }
 
@@ -316,13 +331,13 @@ h6 {
 .header {
     transition: all 0.5s;
     z-index: 997;
-    height: 90px;
+    /* height: 90px; */
 }
 
 .header.sticked {
     position: fixed;
     background-color: white;
-    top: 0;
+    top: 0px;
     right: 0;
     left: 0;
     height: 90px;
@@ -368,7 +383,7 @@ h6 {
 }
 
 .sticked-header-offset {
-    margin-top: 0;
+    margin-top: -20px;
 }
 
 section {
